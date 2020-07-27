@@ -1,0 +1,440 @@
+@import "./utility";
+@import "./destination";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body {
+    font-family: century gothic !important;
+    scroll-behavior: smooth;
+    font-weight: map-get($font-weights, normal);
+}
+.navbar-brand {
+    color: $secondary-color !important;
+    &:hover {
+        color: $primary-color !important;
+    }
+    font-weight: normal;
+    span {
+        color: $primary-color;
+    }
+}
+nav {
+    position: fixed !important;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    li {
+        a:hover {
+            color: $primary-color !important;
+        }
+    }
+}
+.thumb {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+.row {
+    margin: 0 !important;
+}
+.sticky {
+    position: fixed !important;
+    height: 50px;
+    box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+    transition: 0.4s ease;
+}
+.modal-window {
+    z-index: 9999 !important;
+}
+.title {
+    font-weight: bold;
+}
+a {
+    text-decoration: none !important;
+    color: $secondary-text !important;
+}
+input {
+    outline: none;
+}
+.search-box {
+    transform: translateX(-50%, -50%);
+    background: $primary-color;
+    transform-origin: right;
+    height: 40px;
+    border-radius: 40px;
+
+    .search-btn {
+        width: 40px !important;
+        height: 40px;
+        border-radius: 40px;
+        color: $text !important;
+        background-color: $primary-color;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    &:hover > .search-txt {
+        width: 250px !important;
+        padding: 0 6px;
+    }
+    .search-txt:focus {
+        width: 250px !important;
+        padding: 0 6px;
+    }
+
+    input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        line-height: 40px;
+        color: $text;
+        float: left;
+        transition: 0.4s;
+        width: 0px;
+        padding: 0;
+    }
+    ::placeholder {
+        color: $text;
+    }
+}
+@media (max-width: 767px) {
+    .search-box {
+        // transform: translateX(-50%, -50%);
+        display: none;
+    }
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel-indicators {
+    li {
+        background-color: white !important;
+    }
+}
+.popular-destination {
+    background-color: #f8f8f8;
+    padding-top: 100px !important;
+    padding-bottom: 120px !important;
+
+    h3 {
+        font-weight: map-get($font-weights, medium);
+    }
+
+    .destination {
+        position: relative;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.3s;
+
+        .thumb {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+        .item {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+            color: white;
+            margin-bottom: 0;
+            z-index: 4;
+            p {
+                color: white;
+                margin-bottom: 0;
+            }
+        }
+        .p-places {
+            background-color: $secondary-color;
+            margin-left: 5px;
+            border-radius: 30px;
+            align-self: center;
+            font-size: 15px;
+            padding: 0 12px !important;
+            height: 25px;
+
+            a {
+                color: white !important;
+            }
+        }
+        &::before {
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            background: linear-gradient(
+                to bottom,
+                rgba(174, 194, 245, 0) 0%,
+                rgba(4, 14, 39, 0.7) 100%
+            );
+        }
+        &:hover {
+            transform: translateY(-10px);
+            font-weight: map-get($font-weights, bold);
+        }
+        &:hover > .item {
+            color: $primary-color;
+        }
+        &:hover .p-places {
+            background-color: $primary-color !important;
+        }
+    }
+    .place {
+        color: $text;
+        transition: 0.4s;
+    }
+}
+.break-section {
+    width: 100%;
+    background: linear-gradient(
+            to right,
+            $secondary-text 40%,
+            rgba(255, 255, 255, 0.034)
+        ),
+        url(../img/watersport5.jpg);
+    background-position: right;
+    padding: 67px 40px;
+    color: white;
+    font-weight: map-get($font-weights, bold);
+}
+.subscribe-section {
+    background-image: url(../img/newsletter.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 67px 0;
+    color: white;
+
+    h4 {
+        font-weight: map-get($font-weights, bold);
+        font-size: 24px;
+    }
+    .subscribe-bar {
+        .input-field {
+            margin-right: 10px;
+            input {
+                width: 100%;
+                height: 50px;
+                background: #fff;
+                border-radius: 5px;
+                border: 0;
+                padding-left: 15px;
+                color: #000;
+                font-size: 16px;
+                font-weight: normal;
+                position: relative;
+            }
+        }
+
+        button {
+            @extend %btn-1;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 13px 5px !important;
+            margin-right: 10px !important;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .input-field {
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+    }
+}
+.overlay {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: $dark;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: -1;
+        opacity: 0.7;
+    }
+}
+.popular-places-section {
+    padding-top: 142px;
+    padding-bottom: 150px;
+    background: #f7fafd;
+
+    .place-card {
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: 0.3s;
+        margin-bottom: 30px;
+        &:hover {
+            box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+            transition: 0.4s ease;
+        }
+        &:hover h3 {
+            color: $primary-color !important;
+        }
+
+        .place-info {
+            padding: 27px 20px 25px;
+
+            .rating_days {
+                span i {
+                    font-size: 12px;
+                    color: #fdae5c;
+                }
+            }
+        }
+    }
+    .more_place_btn {
+        margin-top: 40px;
+        .btn-1 {
+            @extend %btn-1;
+        }
+    }
+}
+.popular-hotel-section {
+    padding-top: 142px;
+    padding-bottom: 150px;
+    background: $text;
+    color: $secondary-text !important;
+
+    .hotel-card {
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: 0.3s;
+        margin-bottom: 30px;
+        &:hover {
+            box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+            transition: 0.4s ease;
+        }
+        &:hover h3 {
+            color: $primary-color !important;
+        }
+
+        .place-info {
+            padding: 27px 20px 25px;
+
+            .rating_days {
+                span i {
+                    font-size: 12px;
+                    color: #fdae5c;
+                }
+            }
+        }
+    }
+    .more_place_btn {
+        margin-top: 40px;
+        .btn-1 {
+            @extend %btn-1;
+        }
+    }
+}
+.places-section {
+    padding-top: 70px;
+    padding-bottom: 150px;
+    background: $text;
+    color: $secondary-text !important;
+}
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.img-fluid {
+    margin: 0 !important;
+    padding: 2px !important;
+}
+.col-md-4 {
+    padding: 2px !important;
+    margin: 0 !important;
+}
+.col-md-12 {
+    padding: 2px !important;
+}
+.item-1 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/laccampagne/1.jpg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item-2 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/laccampagne/1.jpg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item-3 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/laccampagne/1.jpg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.lcc-1 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/lcc.jpg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide-1 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/lcc.jpg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide-2 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/lacam.jpg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide-3 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/eko.jpeg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.eko-1 {
+    background: linear-gradient(to top, $secondary-text 20%, rgba(0, 0, 0, 0)),
+        url(../img/eko.jpeg);
+    color: white;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

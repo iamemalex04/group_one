@@ -1,0 +1,86 @@
+.where_togo_area {
+    padding: 20px 0;
+    background-color: $dark;
+    color: $text;
+    width: 100%;
+
+    .input_field {
+        width: 100% !important;
+        height: 50px;
+        background: transparent;
+        border: 1px solid #363e52;
+        padding-left: 15px;
+        border-radius: 5px;
+        color: #fff;
+    }
+    select {
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: 1px solid #363e52;
+        padding-left: 15px;
+        border-radius: 5px;
+        color: #fff;
+        outline: none;
+        option {
+            width: 100%;
+            height: 50px;
+            background: $dark;
+            border: 1px solid #363e52;
+            padding-left: 15px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .btn-1 {
+            @extend %btn-1;
+        }
+    }
+    .btn-1 {
+        @extend %btn-1;
+        width: 100%;
+    }
+}
+// @media (max-width: 991px) and (min-width: 768px) {
+//     .where_togo_area .search_wrap .input_field {
+//         max-width: 150px;
+//     }
+// }
+// @media (max-width: 767px) {
+//     .where_togo_area .search_wrap .input_field {
+//         width: 100%;
+//         margin-bottom: 15px;
+//     }
+// }
+// @media (max-width: 1200px) and (min-width: 992px) {
+//     .where_togo_area .search_wrap .input_field {
+//         max-width: 170px;
+//     }
+// }
+// @media (max-width: 767px) {
+//     .where_togo_area .search_wrap .input_field select {
+//         margin-bottom: 15px;
+//     }
+// }
+// .where_togo_area .search_wrap .input_field select {
+//     width: 100%;
+//     height: 50px;
+//     line-height: 50px;
+//     font-size: 16px;
+//     color: #aab1b7;
+//     font-weight: 300;
+//     background: transparent;
+//     border: 1px solid #363e52;
+// }
+
+// @media (max-width: 1200px) and (min-width: 992px) {
+//     .where_togo_area .form_area h3 {
+//         font-size: 18px;
+//     }
+// }
+// .locations {
+//     margin-bottom: 30px;
+// }
+.popular-hotel-section {
+    padding: 0 !important;
+    margin: 0 !important;
+}

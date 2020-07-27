@@ -1,0 +1,13 @@
+{
+    "name": "group_one",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/iamemalex04/group_one.git",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

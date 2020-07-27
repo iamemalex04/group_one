@@ -1,0 +1,70 @@
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://selfcatering.jamiecurran.tech/uploads/street.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+  }
+  .hero {
+    padding: 0 20px;
+  }
+  .hero .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    padding-top: 30vh;
+  }
+  .hero .hero-inner h2 {
+    font-size: 3.5em;
+    font-weight: 700;
+  }
+  .hero .hero-inner p {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .bookings{
+    margin-top: 50px;
+  }
+  
+  .bookings .bookings-inner{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .bookings .bookings-inner .bookings-container {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .bookings .bookings-inner .bookings-container form input {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+  }
+  .bookings .bookings-inner .bookings-container form input[type=text] {
+    padding: 15px 20px;
+  }
+  .bookings .bookings-inner .bookings-container form input[type=datetime-local] {
+    padding: 15px 20px;
+  }
+  
+  .bookings .bookings-inner .bookings-container form input[type=submit] {
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.2s all;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+  .bookings .bookings-inner .bookings-container form input[type=submit]:hover {
+    border: 1px solid crimson;
+    color: crimson;
+    background-color: transparent;
+  } 

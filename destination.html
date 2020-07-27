@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Destination | Escapade</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/modal.css" />
+        <link href="css/animation-aos.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"
+                    ><img src="img/logo.png" alt="" width="120px"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse justify-content-end bg-light"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bookings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="search-box">
+                                <input
+                                    type="text"
+                                    name=""
+                                    class="search-txt"
+                                    placeholder="Type to search"
+                                />
+                                <a class="search-btn" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+            >
+                <ol class="carousel-indicators">
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="0"
+                        class="active"
+                    ></li>
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="1"
+                    ></li>
+                    <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="2"
+                    ></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div
+                        class="carousel-item slide-1 active"
+                      
+                    >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4">Lekki Conservation Center</h2>
+                            <p class="lead">
+                                The centre is a conservation initiative meant for protecting wildlife in the coastal area of southwest Nigeria.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div
+                        class="carousel-item slide-2"
+                        
+                    >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4">La Campgagne Tropicana</h2>
+                            <p class="lead">
+                                La Campagne Tropicana is a breathtakingly beautiful modern beach resort covering over 60 acres on the coast of the Atlantic Ocean. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div
+                        class="carousel-item slide-3"
+                        
+                        "
+                    >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="display-4">Eko Hotels & Suite</h2>
+                            <p class="lead">
+                                The Chagoury Group of companies is a premier hospitality brand and the standard of Eko Hotel’s rooms reflects this.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a
+                    class="carousel-control-next"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+        </header>
+        <div class="where_togo_area">
+            <div class="container">
+                <div class="" id="search">
+                    <form
+                        id="search-form"
+                        action=""
+                        method="POST"
+                        class="row"
+                        enctype="multipart/form-data"
+                    >
+                        <div class="form-group col-lg-9 col-xs-9">
+                            <input
+                                class="form-control input_field"
+                                type="text"
+                                id="myInput"
+                                placeholder="Search"
+                            />
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <button type="submit" class="btn-1">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row" id="products"></div>
+            </div>
+        </div>
+        <section class="popular-places-section">
+            
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
+                        <div class="place-card">
+                            <div class="thumb">
+                                <img src="img/lacam.jpg" alt="" />
+                            </div>
+                            <div class="place-info">
+                                <div class="place-title">
+                                    <a
+                                        href="lacampigntopicana.html"
+                                        class="title"
+                                        ><h4>La Campagne Tropicana</h4></a
+                                    >
+                                    <p>Lagos State</p>
+                                </div>
+                                <div
+                                    class="rating_days d-flex justify-content-between"
+                                >
+                                    <span
+                                        class="d-flex justify-content-center align-items-center"
+                                    >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <a href="#">(20 Review)</a>
+                                    </span>
+                                    <div class="days">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#">5 Days</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                    >
+                        <div class="place-card">
+                            <div class="thumb">
+                                <img src="img/lcc.jpg" alt="" />
+                            </div>
+                            <div class="place-info">
+                                <div class="place-title">
+                                    <a href="lcc.html" class="title"
+                                        ><h4>Lekki Conservation</h4></a
+                                    >
+                                    <p>Lagos State</p>
+                                </div>
+                                <div
+                                    class="rating_days d-flex justify-content-between"
+                                >
+                                    <span
+                                        class="d-flex justify-content-center align-items-center"
+                                    >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <a href="#">(20 Review)</a>
+                                    </span>
+                                    <div class="days">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#">5 Days</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1300"
+                    >
+                        <div class="place-card">
+                            <div class="thumb">
+                                <img src="img/atlantic.jpg" alt="" />
+                            </div>
+                            <div class="place-info">
+                                <div class="place-title">
+                                    <a href="#" class="title"
+                                        ><h4>Eko Atlantic</h4></a
+                                    >
+                                    <p>Lagos State</p>
+                                </div>
+                                <div
+                                    class="rating_days d-flex justify-content-between"
+                                >
+                                    <span
+                                        class="d-flex justify-content-center align-items-center"
+                                    >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <a href="#">(20 Review)</a>
+                                    </span>
+                                    <div class="days">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#">5 Days</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
+                        <div class="place-card">
+                            <div class="thumb">
+                                <img
+                                    src="img/benin-national-musium.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="place-info">
+                                <div class="place-title">
+                                    <a href="#" class="title"
+                                        ><h4>Benin National Musium</h4></a
+                                    >
+                                    <p>Edo State</p>
+                                </div>
+                                <div
+                                    class="rating_days d-flex justify-content-between"
+                                >
+                                    <span
+                                        class="d-flex justify-content-center align-items-center"
+                                    >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <a href="#">(20 Review)</a>
+                                    </span>
+                                    <div class="days">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#">5 Days</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                    >
+                        <div class="place-card">
+                            <div class="thumb">
+                                <img src="img/The-Trukadero-Place.jpg" alt="" />
+                            </div>
+                            <div class="place-info">
+                                <div class="place-title">
+                                    <a href="#" class="title"
+                                        ><h4>The Trukadero Place</h4></a
+                                    >
+                                    <p>Abuja FCT</p>
+                                </div>
+                                <div
+                                    class="rating_days d-flex justify-content-between"
+                                >
+                                    <span
+                                        class="d-flex justify-content-center align-items-center"
+                                    >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <a href="#">(20 Review)</a>
+                                    </span>
+                                    <div class="days">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#">5 Days</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1300"
+                    >
+                        <div class="place-card">
+                            <div class="thumb">
+                                <img src="img/eleko.jpg" alt="" />
+                            </div>
+                            <div class="place-info">
+                                <div class="place-title">
+                                    <a href="#" class="title"><h4>Eleko Beach</h4></a>
+                                    <p>Lagos State</p>
+                                </div>
+                                <div
+                                    class="rating_days d-flex justify-content-between"
+                                >
+                                    <span
+                                        class="d-flex justify-content-center align-items-center"
+                                    >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <a href="#">(20 Review)</a>
+                                    </span>
+                                    <div class="days">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#">5 Days</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <section class="popular-hotel-section">
+
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-lg-4 col-md-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
+                            <div class="hotel-card">
+                                <div class="thumb">
+                                    <img src="img/eko.jpg" alt="" />
+                                </div>
+                                <div class="place-info">
+                                    <div class="place-title">
+                                        <a href="eko.html" class="title"
+                                            ><h3>Eko Hotel</h3></a
+                                        >
+                                        <p>Lagos State</p>
+                                    </div>
+                                    <div
+                                        class="rating_days d-flex justify-content-between"
+                                    >
+                                        <span
+                                            class="d-flex justify-content-center align-items-center"
+                                        >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <a href="#">(20 Review)</a>
+                                        </span>
+                                        <div class="days">
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#">5 Days</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                        >
+                            <div class="hotel-card">
+                                <div class="thumb">
+                                    <img src="img/radison.jpg" alt="" />
+                                </div>
+                                <div class="place-info">
+                                    <div class="place-title">
+                                        <a href="#" class="title"
+                                            ><h3>Radisson Blue</h3></a
+                                        >
+                                        <p>Lagos State</p>
+                                    </div>
+                                    <div
+                                        class="rating_days d-flex justify-content-between"
+                                    >
+                                        <span
+                                            class="d-flex justify-content-center align-items-center"
+                                        >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <a href="#">(20 Review)</a>
+                                        </span>
+                                        <div class="days">
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#">5 Days</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1300"
+                        >
+                            <div class="hotel-card">
+                                <div class="thumb">
+                                    <img src="img/oriental.jpg" alt="" />
+                                </div>
+                                <div class="place-info">
+                                    <div class="place-title">
+                                        <a href="#" class="title"
+                                            ><h3>Oriental Hotel</h3></a
+                                        >
+                                        <p>Lagos State</p>
+                                    </div>
+                                    <div
+                                        class="rating_days d-flex justify-content-between"
+                                    >
+                                        <span
+                                            class="d-flex justify-content-center align-items-center"
+                                        >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <a href="#">(20 Review)</a>
+                                        </span>
+                                        <div class="days">
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#">5 Days</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div
+                            class="col-lg-4 col-md-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
+                            <div class="hotel-card">
+                                <div class="thumb">
+                                    <img src="img/2.png" alt="" />
+                                </div>
+                                <div class="place-info">
+                                    <div class="place-title">
+                                        <a href="#" class="title"><h3>Lekki</h3></a>
+                                        <p>Lagos State</p>
+                                    </div>
+                                    <div
+                                        class="rating_days d-flex justify-content-between"
+                                    >
+                                        <span
+                                            class="d-flex justify-content-center align-items-center"
+                                        >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <a href="#">(20 Review)</a>
+                                        </span>
+                                        <div class="days">
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#">5 Days</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                        >
+                            <div class="hotel-card">
+                                <div class="thumb">
+                                    <img src="img/2.png" alt="" />
+                                </div>
+                                <div class="place-info">
+                                    <div class="place-title">
+                                        <a href="#" class="title"><h3>Lekki</h3></a>
+                                        <p>Lagos State</p>
+                                    </div>
+                                    <div
+                                        class="rating_days d-flex justify-content-between"
+                                    >
+                                        <span
+                                            class="d-flex justify-content-center align-items-center"
+                                        >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <a href="#">(20 Review)</a>
+                                        </span>
+                                        <div class="days">
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#">5 Days</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1300"
+                        >
+                            <div class="hotel-card">
+                                <div class="thumb">
+                                    <img src="img/2.png" alt="" />
+                                </div>
+                                <div class="place-info">
+                                    <div class="place-title">
+                                        <a href="#" class="title"><h3>Lekki</h3></a>
+                                        <p>Lagos State</p>
+                                    </div>
+                                    <div
+                                        class="rating_days d-flex justify-content-between"
+                                    >
+                                        <span
+                                            class="d-flex justify-content-center align-items-center"
+                                        >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <a href="#">(20 Review)</a>
+                                        </span>
+                                        <div class="days">
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#">5 Days</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="subscribe-section overlay">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-10">
+                        <div class="row align-items-center">
+                            <div
+                                class="subscribe-text justify-content-center align-items-center col-lg-5"
+                            >
+                                <div class="sub-text">
+                                    <h4>Subscribe Our Newsletter</h4>
+                                    <p>
+                                        Subscribe newsletter to get offers and
+                                        about new places to discover.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="subscribe-bar col-lg-7">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-9 col-md-8">
+                                        <div class="input-field">
+                                            <input
+                                                type="email"
+                                                placeholder="Your mail"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <div>
+                                            <a
+                                                href="#open-modal"
+                                                class="modal-container"
+                                            >
+                                                <button>Subscribe</button>
+                                            </a>
+                                        </div>
+                                        <div
+                                            id="open-modal"
+                                            class="modal-window"
+                                        >
+                                            <div>
+                                                <a
+                                                    href="#close"
+                                                    title="close"
+                                                    class="modal-close"
+                                                    >x</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/destination.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/style.js"></script>
+        <script src="js/test.js"></script>
+        <script src="js/slim.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

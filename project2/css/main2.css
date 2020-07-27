@@ -1,0 +1,568 @@
+.where_togo_area select .btn-1, .where_togo_area .btn-1, .subscribe-section .subscribe-bar button, .popular-places-section .more_place_btn .btn-1, .popular-hotel-section .more_place_btn .btn-1 {
+  background: #e53935;
+  color: #fff !important;
+  display: inline-block;
+  padding: 13px 39px !important;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.where_togo_area .btn-1:hover, .subscribe-section .subscribe-bar button:hover, .popular-places-section .more_place_btn .btn-1:hover, .popular-hotel-section .more_place_btn .btn-1:hover {
+  background-color: #00a0cb;
+}
+
+.where_togo_area {
+  padding: 20px 0;
+  background-color: #012840;
+  color: white;
+  width: 100%;
+}
+
+.where_togo_area .input_field {
+  width: 100% !important;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #363e52;
+  padding-left: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.where_togo_area select {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #363e52;
+  padding-left: 15px;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+}
+
+.where_togo_area select option {
+  width: 100%;
+  height: 50px;
+  background: #012840;
+  border: 1px solid #363e52;
+  padding-left: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.where_togo_area .btn-1 {
+  width: 100%;
+}
+
+.popular-hotel-section {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+body {
+  font-family: century gothic !important;
+  scroll-behavior: smooth;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  color: #00a0cb !important;
+  font-weight: normal;
+}
+
+.navbar-brand:hover {
+  color: #e53935 !important;
+}
+
+.navbar-brand span {
+  color: #e53935;
+}
+
+nav {
+  position: fixed !important;
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+}
+
+nav li a:hover {
+  color: #e53935 !important;
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.sticky {
+  position: fixed !important;
+  height: 50px;
+  -webkit-box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+          box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.modal-window {
+  z-index: 9999 !important;
+}
+
+.title {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1c1d21 !important;
+}
+
+input {
+  outline: none;
+}
+
+.search-box {
+  -webkit-transform: translateX(-50%, -50%);
+          transform: translateX(-50%, -50%);
+  background: #e53935;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.search-box .search-btn {
+  width: 40px !important;
+  height: 40px;
+  border-radius: 40px;
+  color: white !important;
+  background-color: #e53935;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+
+.search-box:hover > .search-txt {
+  width: 250px !important;
+  padding: 0 6px;
+}
+
+.search-box .search-txt:focus {
+  width: 250px !important;
+  padding: 0 6px;
+}
+
+.search-box input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  line-height: 40px;
+  color: white;
+  float: left;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 0px;
+  padding: 0;
+}
+
+.search-box ::-webkit-input-placeholder {
+  color: white;
+}
+
+.search-box :-ms-input-placeholder {
+  color: white;
+}
+
+.search-box ::-ms-input-placeholder {
+  color: white;
+}
+
+.search-box ::placeholder {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .search-box {
+    display: none;
+  }
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-indicators li {
+  background-color: white !important;
+}
+
+.popular-destination {
+  background-color: #f8f8f8;
+  padding-top: 100px !important;
+  padding-bottom: 120px !important;
+}
+
+.popular-destination h3 {
+  font-weight: 700;
+}
+
+.popular-destination .destination {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popular-destination .destination .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.popular-destination .destination .thumb img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.popular-destination .destination .item {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  color: white;
+  margin-bottom: 0;
+  z-index: 4;
+}
+
+.popular-destination .destination .item p {
+  color: white;
+  margin-bottom: 0;
+}
+
+.popular-destination .destination .p-places {
+  background-color: #00a0cb;
+  margin-left: 5px;
+  border-radius: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 15px;
+  padding: 0 12px !important;
+  height: 25px;
+}
+
+.popular-destination .destination .p-places a {
+  color: white !important;
+}
+
+.popular-destination .destination::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 14, 39, 0)), to(rgba(4, 14, 39, 0.7)));
+  background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+}
+
+.popular-destination .destination:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  font-weight: 900;
+}
+
+.popular-destination .destination:hover > .item {
+  color: #e53935;
+}
+
+.popular-destination .destination:hover .p-places {
+  background-color: #e53935 !important;
+}
+
+.popular-destination .place {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.break-section {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #1c1d21), to(rgba(255, 255, 255, 0.034))), url(../img/watersport5.jpg);
+  background: linear-gradient(to right, #1c1d21 40%, rgba(255, 255, 255, 0.034)), url(../img/watersport5.jpg);
+  background-position: right;
+  padding: 67px 40px;
+  color: white;
+  font-weight: 900;
+}
+
+.subscribe-section {
+  background-image: url(../img/newsletter.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 67px 0;
+  color: white;
+}
+
+.subscribe-section h4 {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.subscribe-section .subscribe-bar .input-field {
+  margin-right: 10px;
+}
+
+.subscribe-section .subscribe-bar .input-field input {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding-left: 15px;
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+}
+
+.subscribe-section .subscribe-bar button {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 13px 5px !important;
+  margin-right: 10px !important;
+}
+
+@media (max-width: 767px) {
+  .input-field {
+    margin-right: 0 !important;
+    margin-bottom: 15px;
+  }
+}
+
+.overlay {
+  position: relative;
+  z-index: 0;
+}
+
+.overlay::before {
+  position: absolute;
+  content: "";
+  background-color: #012840;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.popular-places-section {
+  padding-top: 142px;
+  padding-bottom: 150px;
+  background: #f7fafd;
+}
+
+.popular-places-section .place-card {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.popular-places-section .place-card:hover {
+  -webkit-box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+          box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.popular-places-section .place-card:hover h3 {
+  color: #e53935 !important;
+}
+
+.popular-places-section .place-card .place-info {
+  padding: 27px 20px 25px;
+}
+
+.popular-places-section .place-card .place-info .rating_days span i {
+  font-size: 12px;
+  color: #fdae5c;
+}
+
+.popular-places-section .more_place_btn {
+  margin-top: 40px;
+}
+
+.popular-hotel-section {
+  padding-top: 142px;
+  padding-bottom: 150px;
+  background: white;
+  color: #1c1d21 !important;
+}
+
+.popular-hotel-section .hotel-card {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.popular-hotel-section .hotel-card:hover {
+  -webkit-box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+          box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.2);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.popular-hotel-section .hotel-card:hover h3 {
+  color: #e53935 !important;
+}
+
+.popular-hotel-section .hotel-card .place-info {
+  padding: 27px 20px 25px;
+}
+
+.popular-hotel-section .hotel-card .place-info .rating_days span i {
+  font-size: 12px;
+  color: #fdae5c;
+}
+
+.popular-hotel-section .more_place_btn {
+  margin-top: 40px;
+}
+
+.places-section {
+  padding-top: 70px;
+  padding-bottom: 150px;
+  background: white;
+  color: #1c1d21 !important;
+}
+
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.img-fluid {
+  margin: 0 !important;
+  padding: 2px !important;
+}
+
+.col-md-4 {
+  padding: 2px !important;
+  margin: 0 !important;
+}
+
+.col-md-12 {
+  padding: 2px !important;
+}
+
+.item-1 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/laccampagne/1.jpg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/laccampagne/1.jpg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item-2 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/laccampagne/1.jpg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/laccampagne/1.jpg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item-3 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/laccampagne/1.jpg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/laccampagne/1.jpg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lcc-1 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/lcc.jpg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/lcc.jpg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-1 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/lcc.jpg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/lcc.jpg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-2 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/lacam.jpg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/lacam.jpg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-3 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/eko.jpeg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/eko.jpeg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.eko-1 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1d21), to(rgba(0, 0, 0, 0))), url(../img/eko.jpeg);
+  background: linear-gradient(to top, #1c1d21 20%, rgba(0, 0, 0, 0)), url(../img/eko.jpeg);
+  color: white;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=main.css.map */
